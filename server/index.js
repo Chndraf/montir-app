@@ -22,7 +22,7 @@ app.post('/register', (req, res) => {
     const hashedPassword = bcrypt.hashSync(password, 8);
     
     const sql = "INSERT INTO users (username, password) VALUES (?, ?)";
-    db.query(sql, [username, hashedPassword], (err, result) => {
+    db.query(sql, [username, hashedPassword], (err) => {
         if (err) return res.status(500).json({ error: err.message });
         res.status(201).json({ message: "User berhasil dibuat!" });
     });

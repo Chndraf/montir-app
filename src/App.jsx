@@ -22,7 +22,7 @@ function App() {
             <Route path="/register" element={<Register />} />
           </Routes>
         </main>
-        <footer className="bg-gray-800 text-white text-center py-4 mt-10">
+        <footer className="bg-gray-800 text-white text-center py-2 mt-10">
           © 2025 MontirAI - Kelompok 5 artificial intelligence. All rights reserved.
         </footer>
       </div>
